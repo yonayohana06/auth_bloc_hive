@@ -236,14 +236,14 @@ class _RegisterState extends State<_Register> {
               content: Text("Berhasil tambah data : $name $email $password"),
             ),
           );
-
-          // Navigator.of(context).push(
-          //   MaterialPageRoute(
-          //     builder: (context) => HomeScreen(),
-          //   ),
-          // );
         }
-        setState(() {});
+        Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(
+            builder: (context) => LoginScreen(),
+          ),
+          (route) => false,
+        );
       },
       child: const Text("Register"),
     );
