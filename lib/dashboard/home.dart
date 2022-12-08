@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'),
+        title: const Text('Home'),
       ),
       body: Container(
         margin: const EdgeInsets.all(20),
@@ -64,16 +64,16 @@ class _HomeState extends State<_Home> {
               children: [
                 Text(
                   "Welcome ${data[0].name}!",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 10.0,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 4.0,
                 ),
                 Text(
                   data[0].email,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 12.0,
                     fontWeight: FontWeight.bold,
                   ),

@@ -1,5 +1,4 @@
 import 'package:auth_bloc_hive/boxes/boxes.dart';
-import 'package:auth_bloc_hive/dashboard/home.dart';
 import 'package:auth_bloc_hive/login/login.dart';
 import 'package:auth_bloc_hive/models/user_model.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +33,6 @@ class _RegisterState extends State<_Register> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
   }
 
@@ -240,7 +238,7 @@ class _RegisterState extends State<_Register> {
         Navigator.pushAndRemoveUntil(
           context,
           MaterialPageRoute(
-            builder: (context) => LoginScreen(),
+            builder: (context) => const LoginScreen(),
           ),
           (route) => false,
         );

@@ -1,8 +1,6 @@
-import 'package:auth_bloc_hive/dashboard/home.dart';
 import 'package:auth_bloc_hive/login/login.dart';
 import 'package:auth_bloc_hive/models/constant.dart' as constant;
 import 'package:auth_bloc_hive/models/user_model.dart';
-import 'package:auth_bloc_hive/register/register.dart';
 import 'package:auth_bloc_hive/services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -39,7 +37,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: LoginScreen(),
+        home: const LoginScreen(),
       ),
     );
   }

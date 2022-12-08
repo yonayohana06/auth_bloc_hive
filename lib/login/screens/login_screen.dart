@@ -23,7 +23,7 @@ class LoginScreen extends StatelessWidget {
                 if (state is LoginSuccessful) {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (context) => HomeScreen(),
+                      builder: (context) => const HomeScreen(),
                     ),
                   );
                 }
@@ -32,7 +32,7 @@ class LoginScreen extends StatelessWidget {
                     showDialog(
                       context: context,
                       builder: (context) => AlertDialog(
-                        title: Text('Login Failed'),
+                        title: const Text('Login Failed'),
                         content: Text(state.error!),
                       ),
                     );

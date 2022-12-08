@@ -12,19 +12,17 @@ class LoginInitial extends LoginState {
 class LoginSuccessful extends LoginState {
   final String email;
 
-  LoginSuccessful(this.email);
+  const LoginSuccessful(this.email);
 
   @override
-  // TODO: implement props
   List<Object?> get props => [email];
 }
 
 class LoginFailed extends LoginState {
   final String? error;
 
-  LoginFailed({this.error});
+  const LoginFailed({this.error});
 
   @override
-  // TODO: implement props
   List<Object?> get props => [error];
 }
